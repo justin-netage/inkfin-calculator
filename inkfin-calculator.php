@@ -4,7 +4,7 @@
  * Plugin Name:       Inkfin Loan Calculator
  * Plugin URI:        https://github.com/justin-netage/inkfin-calculator
  * Description:       Displays calculator on selcted pages using shortcode and attributes.
- * Version:           1.0
+ * Version:           1.1
  * Requires at least: 5.2
  * Requires PHP:      7.2
  * Author:            Net Age
@@ -30,7 +30,7 @@ $myUpdateChecker->setBranch('main');
 // $myUpdateChecker->setAuthentication('your-token-here');
 
 $myUpdateChecker->getVcsApi()->enableReleaseAssets();
-$updateChecker->setBranch('main');
+$myUpdateChecker->setBranch('main');
 
 
 add_shortcode('display_calculator', 'display_calculator_shortcode');
