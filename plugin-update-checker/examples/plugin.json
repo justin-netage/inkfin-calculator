@@ -1,0 +1,51 @@
+{
+	"name": "Inkfin Loan Calculator",
+	"version": "1.0",
+	"download_url": "https://github.com/justin-netage/inkfin-calculator/archive/refs/heads/main.zip",
+
+	"homepage": "https://netage.co.za/",
+	"requires": "4.5",
+	"tested": "4.8",
+	"last_updated": "2022-04-07 11:09:00",
+	"upgrade_notice": "Update for sercurity and up to date features.",
+
+	"author": "Justin Hammond",
+	"author_homepage": "https://netage.co.za",
+
+	"sections": {
+		"description": "A plugin designed to allow users to place the loan calculator on any page using shortcode with attributes.",
+		"installation": "Upload zip file of plugin to wordpress website.",
+		"changelog": "Changelog. <p>Added updater feature</p>"
+	},
+	
+	"icons" : {
+		"1x" : "http://w-shadow.com/files/external-update-example/assets/icon-128x128.png",
+		"2x" : "http://w-shadow.com/files/external-update-example/assets/icon-256x256.png"
+    },
+
+	"banners": {
+		"low": "http://w-shadow.com/files/external-update-example/assets/banner-772x250.png",
+		"high": "http://w-shadow.com/files/external-update-example/assets/banner-1544x500.png"
+	},
+
+	"translations": [
+		{
+			"language": "fr_FR",
+			"version": "4.0",
+			"updated": "2016-04-22 23:22:42",
+			"package": "http://example.com/updates/translations/french-language-pack.zip"
+		},
+		{
+			"language": "de_DE",
+			"version": "5.0",
+			"updated": "2016-04-22 23:22:42",
+			"package": "http://example.com/updates/translations/german-language-pack.zip"
+		}
+	],
+
+	"rating": 0,
+	"num_ratings": 0,
+
+	"downloaded": 0,
+	"active_installs": 0
+}
