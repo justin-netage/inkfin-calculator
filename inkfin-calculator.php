@@ -6,7 +6,7 @@ include_once('updater.php');
  * Plugin Name:       Inkfin Loan Calculator
  * Plugin URI:        https://example.com/plugins/the-basics/
  * Description:       Displays calculator on selcted pages using shortcode and attributes.
- * Version:           1.0
+ * Version:           1.0.1
  * Requires at least: 5.2
  * Requires PHP:      7.2
  * Author:            Net Age
