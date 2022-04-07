@@ -1,7 +1,5 @@
 <?php 
 
-include_once('updater.php');
-
 /**
  * Plugin Name:       Inkfin Loan Calculator
  * Plugin URI:        https://github.com/justin-netage/inkfin-calculator
@@ -20,10 +18,20 @@ include_once('updater.php');
 
 require 'plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'http://example.com/path/to/details.json',
-	__FILE__, //Full path to the main plugin file or functions.php.
+	'https://github.com/justin-netage/inkfin-calculator',
+	__FILE__,
 	'inkfin-calculator'
 );
+
+//Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('main');
+
+//Optional: If you're using a private repository, specify the access token like this:
+// $myUpdateChecker->setAuthentication('your-token-here');
+
+$myUpdateChecker->getVcsApi()->enableReleaseAssets();
+$updateChecker->setBranch('main');
+
 
 add_shortcode('display_calculator', 'display_calculator_shortcode');
 function display_calculator_shortcode( $atts = [], $content = null) {
