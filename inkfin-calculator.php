@@ -34,3 +34,11 @@ if (is_admin()) { // note the use of is_admin() to double check that this is hap
     );
     new WP_GitHub_Updater($config);
 }
+
+add_shortcode('display_calculator', 'display_calculator_shortcode');
+function display_calculator_shortcode( $atts = [], $content = null) {
+    // do something to $content
+    // always return
+    $content = "Hello, World!";
+    return $content;
+}
