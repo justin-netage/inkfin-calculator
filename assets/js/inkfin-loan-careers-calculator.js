@@ -34,13 +34,13 @@ jQuery(document).ready(function() {
 
             total_amount = parseInt(actual_loan_amount) + loan_fee
     
-            for(i = 0; i < 6; i++) {
-                if(i == 0) {
+            for(index = 0; index < 6; index++) {
+                if(index == 0) {
                     amount = total_amount + (total_amount * 0.05);
                     averages.push(amount);
                     average += amount;
                 } else {
-                    amount = averages[i-1] + (averages[i-1] * 0.05);
+                    amount = averages[index-1] + (averages[index-1] * 0.05);
                     averages.push(amount);
                     average += amount;
                 }
@@ -63,13 +63,13 @@ jQuery(document).ready(function() {
 
             total_amount = parseInt(actual_loan_amount) + loan_fee
             
-            for(i = 0; i < 12; i++) {
-                if(i == 0) {
+            for(index = 0; index < 12; i++) {
+                if(index == 0) {
                     amount = total_amount + (total_amount * 0.0229);
                     averages.push(amount);
                     average += amount;
                 } else {
-                    amount = averages[i-1] + (averages[i-1] * 0.0229);
+                    amount = averages[index-1] + (averages[index-1] * 0.0229);
                     averages.push(amount);
                     average += amount;
                 }
@@ -92,13 +92,13 @@ jQuery(document).ready(function() {
 
             total_amount = parseInt(actual_loan_amount) + loan_fee;
 
-            for(i = 0; i < 24; i++) {
-                if(i == 0) {
+            for(index = 0; index < 24; index++) {
+                if(index == 0) {
                     amount = total_amount + (total_amount * 0.0229);
                     averages.push(amount);
                     average += amount;
                 } else {
-                    amount = averages[i-1] + (averages[i-1] * 0.0229);
+                    amount = averages[index-1] + (averages[index-1] * 0.0229);
                     averages.push(amount);
                     average += amount;
                 }
