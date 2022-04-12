@@ -185,9 +185,9 @@ jQuery(document).ready(function() {
             }
             jQuery("#slider_js").rangeslider('update', true);
 
-            el_six_month.classList.remove('btn-outline-success');
-            el_six_month.classList.add('btn-success');
-            el_twelve_month.classList.add('btn-outline-success');
+            el_six_month.classList.remove('button-outline-primary');
+            el_six_month.classList.add('button-primary');
+            el_twelve_month.classList.add('button-outline-primary');
 
         } else if(month_selection == 12) {
             jQuery("#slider_js").attr("min", 2000);
@@ -197,9 +197,9 @@ jQuery(document).ready(function() {
             }
             jQuery("#slider_js").rangeslider('update', true);
             
-            el_twelve_month.classList.remove('btn-outline-success');
-            el_twelve_month.classList.add('btn-success');
-            el_six_month.classList.add('btn-outline-success');
+            el_twelve_month.classList.remove('button-outline-primary');
+            el_twelve_month.classList.add('button-primary');
+            el_six_month.classList.add('button-outline-primary');
         } else {
 
         }

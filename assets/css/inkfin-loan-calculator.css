@@ -32,13 +32,45 @@
     box-shadow:none !important;
     background:#181621 !important;
 }
-.rangeslider__fill {
+.inkfin-tattoos .rangeslider__fill {
     background-color: #C73832 !important;
     border-radius:10px !important;
 }
+
+.inkfin-cosmetics .rangeslider__fill {
+    background-color: #81D3DA !important;
+    border-radius:10px !important;
+}
+
+.inkfin-careers .rangeslider__fill {
+    background-color: #01A958 !important;
+    border-radius:10px !important;
+}
+
 .inkfin-tattoos .rangeslider__handle {
     background-image:url(/wp-content/plugins/inkfin-calculator/assets/images/slider-tattoos.png) !important;
 }
+
+.inkfin-cosmetics .rangeslider__handle::after {
+    background: #81D3DA url(/wp-content/plugins/inkfin-calculator/assets/images/mascara.png) no-repeat center center !important;
+    background-size: auto;
+    background-size: 27px auto !important;
+    width: 39px;
+    height: 39px;
+    box-shadow: inset 3px 0 36px rgba(0,0,0,.1);
+    border: 2px solid black;
+}
+
+.inkfin-careers .rangeslider__handle::after {
+    background: #01A958 url(/wp-content/plugins/inkfin-calculator/assets/images/open-book-with-text-lines.png) no-repeat center center !important;
+    background-size: auto;
+    background-size: 27px auto !important;
+    width: 39px;
+    height: 39px;
+    box-shadow: inset 3px 0 36px rgba(0,0,0,.1);
+    border: 2px solid black;
+}
+
 h3.loan-amount {
     border-radius: 0 0 10px 10px;
     color:white !important;
@@ -62,8 +94,20 @@ h3.repayment {
     border-radius: 12px;
     font:700 18px 'Montserrat', sans-serif;
 }
-.calculator-column .btn-success {
+
+.inkfin-tattoos .calculator-column .btn-success {
     background-color: #C73832;
+}
+
+.inkfin-cosmetics .calculator-column .btn-success {
+    background-color: #81D3DA;
+}
+
+.inkfin-careers .calculator-column .btn-success {
+    background-color: #01A958;
+}
+
+.calculator-column .btn-success {
     border: none;
     color: white;
     padding:18px;
@@ -74,10 +118,23 @@ h3.repayment {
     margin: 30px 14px 60px;
 }
 
-.calculator-column .btn-outline-success {
-    background-color: transparent;
+.inkfin-tattoos .calculator-column .btn-outline-success {
     border: 1px solid #C73832;
     color: #C73832;
+}
+
+.inkfin-cosmetics .calculator-column .btn-outline-success {
+    border: 1px solid #81D3DA;
+    color: #81D3DA;
+}
+
+.inkfin-careers .calculator-column .btn-outline-success {
+    border: 1px solid #01A958;
+    color: #01A958;
+}
+
+.calculator-column .btn-outline-success {
+    background-color: transparent;
     padding: 18px;
     text-align: center;
     text-decoration: none;
@@ -85,11 +142,23 @@ h3.repayment {
     font-size: 16px;
     margin: 30px 14px 60px;
 }
+
+.inkfin-tattoos .repayment-total {
+    background:#C73832;
+}
+
+.inkfin-cosmetics .repayment-total {
+    background: #81D3DA;
+}
+
+.inkfin-careers .repayment-total {
+    background: #01A958;
+}
+
 .repayment-total {
     border-radius: 0 0 12px 12px !important;
     font-weight:800;
     color:white;
-    background:#C73832;
     text-align:center;
     padding:12px;
     font-size:30px;
@@ -113,80 +182,63 @@ h3.repayment {
     text-align: center;
 }
 
-.calculator-column .btn-success {
+.button-primary, .button-outline-primary
+{
+    padding: 0 0.97em !important;
+}
+
+.inkfin-careers .button-primary {
+    color: #fff;
+    background-color: #01A958;
+    border-color: #01A958;
+}
+
+.inkfin-careers .button:hover {
+    color: #fff;
+    background-color: #01A958;
+    border-color: #01A958;
+}
+
+.inkfin-careers .button-outline-primary {
+    color: #01A958;
+    background-color: #fff;
+    border-color: #01A958;
+}
+
+.inkfin-tattoos .button-primary {
     color: #fff;
     background-color: #C73832;
     border-color: #C73832;
 }
 
-.calculator-column .btn-success:hover {
+.inkfin-tattoos .button:hover {
     color: #fff;
     background-color: #C73832;
     border-color: #C73832;
 }
 
-.calculator-column .btn-success:focus,
-.calculator-column .btn-success.focus {
-    box-shadow: 0 0 0 .2rem rgb(211, 47, 47)
-}
-
-.calculator-column .btn-success.disabled,
-.calculator-column .btn-success:disabled {
+.inkfin-tattoos .button-outline-primary {
     color: #C73832;
-    background-color: #c47875;
-    border-color: #c47875;
+    background-color: #fff;
+    border-color: #C73832;
 }
 
-.calculator-column .btn-success:not(:disabled):not(.disabled):active,
-.calculator-column .btn-success:not(:disabled):not(.disabled).active,
-.calculator-column .show>.btn-success.dropdown-toggle {
+.inkfin-cosmetics .button-primary {
     color: #fff;
-    background-color: #C73832;
-    border-color: #C73832;
+    background-color: #81D3DA;
+    border-color: #81D3DA;
 }
 
-.calculator-column .btn-success:not(:disabled):not(.disabled):active:focus,
-.calculator-column .btn-success:not(:disabled):not(.disabled).active:focus,
-.calculator-column .show>.btn-success.dropdown-toggle:focus {
-    box-shadow: 0 0 0 .2rem rgb(211, 47, 47)
-}
-
-.calculator-column .btn-outline-success {
-    color: #C73832;
-    background-color: transparent;
-    background-image: none;
-    border-color: #C73832;
-}
-
-.calculator-column .btn-outline-success:hover {
+.inkfin-cosmetics .button:hover {
     color: #fff;
-    background-color: #C73832;
-    border-color: #C73832;
+    background-color: #81D3DA;
+    border-color: #81D3DA;
 }
 
-.calculator-column .btn-outline-success:focus,
-.calculator-column .btn-outline-success.focus {
-    box-shadow: 0 0 0 .2rem rgb(211, 47, 47)
-}
-
-.calculator-column .btn-outline-success.disabled,
-.calculator-column .btn-outline-success:disabled {
-    color: #c9514d;
-    background-color: transparent
-}
-
-.calculator-column .btn-outline-success:not(:disabled):not(.disabled):active,
-.calculator-column .btn-outline-success:not(:disabled):not(.disabled).active,
-.calculator-column .show>.btn-outline-success.dropdown-toggle {
-    color: #fff;
-    background-color: #C73832;
-    border-color: #C73832;
-}
-
-.calculator-column .btn-outline-success:not(:disabled):not(.disabled):active:focus,
-.calculator-column .btn-outline-success:not(:disabled):not(.disabled).active:focus,
-.calculator-column .show>.btn-outline-success.dropdown-toggle:focus {
-    box-shadow: 0 0 0 .2rem rgb(211, 47, 47)
+.inkfin-cosmetics .button-outline-primary {
+    color: #81D3DA;
+    background-color: #fff;
+    border-color: #81D3DA;
 }
 
 .calculator-column

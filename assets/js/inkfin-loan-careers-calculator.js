@@ -151,30 +151,30 @@ jQuery(document).ready(function() {
             }
             jQuery("#slider_js").rangeslider('update', true);
 
-            el_six_month.classList.remove('btn-outline-success');
-            el_six_month.classList.add('btn-success');
-            el_twelve_month.classList.add('btn-outline-success');
-            el_twenty_four_month.classList.add('btn-outline-success');
+            el_six_month.classList.remove('button-outline-primary');
+            el_six_month.classList.add('button-primary');
+            el_twelve_month.classList.add('button-outline-primary');
+            el_twenty_four_month.classList.add('button-outline-primary');
 
         } else if(month_selection == 12) {
             jQuery("#slider_js").attr("min", 2000);
             jQuery("#slider_js").attr("max", 50000);
             jQuery("#slider_js").rangeslider('update', true);
 
-            el_twelve_month.classList.remove('btn-outline-success');
-            el_twelve_month.classList.add('btn-success');
-            el_six_month.classList.add('btn-outline-success');
-            el_twenty_four_month.classList.add('btn-outline-success');
+            el_twelve_month.classList.remove('button-outline-primary');
+            el_twelve_month.classList.add('button-primary');
+            el_six_month.classList.add('button-outline-primary');
+            el_twenty_four_month.classList.add('button-outline-primary');
 
         } else if(month_selection == 24) {
             jQuery("#slider_js").attr("min", 2000);
             jQuery("#slider_js").attr("max", 50000);
             jQuery("#slider_js").rangeslider('update', true);
 
-            el_twenty_four_month.classList.remove('btn-outline-success');
-            el_twenty_four_month.classList.add('btn-success');
-            el_six_month.classList.add('btn-outline-success');
-            el_twelve_month.classList.add('btn-outline-success');
+            el_twenty_four_month.classList.remove('button-outline-primary');
+            el_twenty_four_month.classList.add('button-primary');
+            el_six_month.classList.add('button-outline-primary');
+            el_twelve_month.classList.add('button-outline-primary');
             
         } 
     }

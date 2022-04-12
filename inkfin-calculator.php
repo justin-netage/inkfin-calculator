@@ -38,15 +38,32 @@ $myUpdateChecker->setBranch('main');
 
 function display_calculator_shortcode($atts, $content = null) {
 
+    $a = shortcode_atts( array(
+        'calc' => 'basic',
+        'website' => 'tattoos',
+    ), $atts );
+
     wp_enqueue_style( 'inkfin-calculator-css',  plugins_url( 'inkfin-calculator/assets/css/inkfin-loan-calculator.css' ) );
     wp_enqueue_style( 'slider-css',  'https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.min.css' );
 
     wp_enqueue_script( 'slider-js', 'https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.min.js', 'jquery', true );
-    wp_enqueue_script( 'inkfin-calculator-js', plugins_url( 'inkfin-calculator/assets/js/inkfin-loan-calculator.js', 'jquery', '', true ) );
+
+    if($a["calc"] == "careers") {
+        wp_enqueue_script( 'inkfin-calculator-js', plugins_url( 'inkfin-calculator/assets/js/inkfin-loan-careers-calculator.js', 'jquery', '', true ) );
+    } else {
+        wp_enqueue_script( 'inkfin-calculator-js', plugins_url( 'inkfin-calculator/assets/js/inkfin-loan-calculator.js', 'jquery', '', true ) );
+    }
 
     ob_start();
 
-    require('includes/templates/calculator-template.php');
+    if($a["website"] == "careers") {
+        require('includes/templates/calculator-careers-template.php');
+
+    } else if($a["website"] == "tattoos") {
+        require('includes/templates/calculator-template.php');
+    } else if($a["website"] == "cosmetics") {
+        require('includes/templates/cosmetics-calculator-template.php');
+    }
 
     $content = ob_get_clean();
 

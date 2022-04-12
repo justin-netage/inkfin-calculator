@@ -1,10 +1,9 @@
-
-<div class="inkfin-tattoos calculator-column">
+<div class="inkfin-cosmetics calculator-column">
     <div class="calculator-text"><h2 style="text-align: center;" data-fontsize="30" data-lineheight="36">Calculate Your Payments</h2>
     <p style="text-align: center;">First select your loan amount on the slider below:</p>
     <p style="text-align: center;"><em><small>“Remember to first get a quote from the studio.”</small></em></p>
     </div>
-    <div style="margin-left:24px; margin-right:24px;"><input
+    <div class="inkfin-cosmetics" style="margin-left:24px; margin-right:24px;"><input
             id="slider_js"
             type="range"
             min="1000"                    
