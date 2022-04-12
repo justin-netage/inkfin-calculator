@@ -62,7 +62,7 @@ function display_calculator_shortcode($atts, $content = null) {
     } else if($a["website"] == "tattoos") {
         require('includes/templates/calculator-template.php');
     } else if($a["website"] == "cosmetics") {
-        require('includes/templates/cosmetics-calculator-template.php');
+        require('includes/templates/calculator-cosmetics-template.php');
     }
 
     $content = ob_get_clean();
