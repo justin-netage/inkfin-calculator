@@ -4,7 +4,7 @@
  * Plugin Name:       Inkfin Loan Calculator
  * Plugin URI:        https://github.com/justin-netage/inkfin-calculator
  * Description:       Displays calculator on selcted pages using shortcode and attributes.
- * Version:           1.0.3
+ * Version:           1.0.4
  * Requires at least: 5.2
  * Requires PHP:      7.2
  * Author:            Net Age
@@ -48,7 +48,7 @@ function display_calculator_shortcode($atts, $content = null) {
 
     wp_enqueue_script( 'slider-js', 'https://cdnjs.cloudflare.com/ajax/libs/rangeslider.js/2.3.2/rangeslider.min.js', 'jquery', true );
 
-    if($a["calc"] == "careers") {
+    if($a["calc"] == "careers" || $a["website"] == "careers") {
         wp_enqueue_script( 'inkfin-calculator-js', plugins_url( 'inkfin-calculator/assets/js/inkfin-loan-careers-calculator.js', 'jquery', '', true ) );
     } else {
         wp_enqueue_script( 'inkfin-calculator-js', plugins_url( 'inkfin-calculator/assets/js/inkfin-loan-calculator.js', 'jquery', '', true ) );
@@ -56,7 +56,7 @@ function display_calculator_shortcode($atts, $content = null) {
 
     ob_start();
 
-    if($a["website"] == "careers") {
+    if($a["website"] == "careers" || $a["calc"] == "careers") {
         require('includes/templates/calculator-careers-template.php');
 
     } else if($a["website"] == "tattoos") {
