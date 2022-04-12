@@ -63,7 +63,7 @@ jQuery(document).ready(function() {
 
             total_amount = parseInt(actual_loan_amount) + loan_fee
             
-            for(index = 0; index < 12; i++) {
+            for(index = 0; index < 12; index++) {
                 if(index == 0) {
                     amount = total_amount + (total_amount * 0.0229);
                     averages.push(amount);
